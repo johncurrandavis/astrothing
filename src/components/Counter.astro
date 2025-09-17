@@ -1,0 +1,18 @@
+
+---
+let count = 0;
+---
+
+<button id="counter">Count: {count}</button>
+
+<script>
+
+  let count = 0;
+
+  document.getElementById("counter").addEventListener("click", () => {
+    count++;
+    document.getElementById("counter").textContent = `Count: ${count}`;
+  });
+
+</script>
+
